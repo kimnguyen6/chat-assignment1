@@ -1,0 +1,15 @@
+{
+    "users":[
+        {
+            "username": "Super",
+            "email": "super@com.au",
+            "role": "Super",
+            "groups": [],
+            "password": "",
+            "valid": false,
+            "adminlist": []
+        }
+
+    ]
+
+}

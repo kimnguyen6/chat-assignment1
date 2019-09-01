@@ -1,25 +1,43 @@
-<section class="hero has-background-primary">
-    <div class="hero-body">
-      <div class="container">
-          <h1 class="title is-1">Chat Application</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <style type="text.css">
+          .container {
+            width: 340px;
+            margin: 50px auto;
+          }
+          .container form {
+            margin-bottom: 15px;
+            background: #f7f7f7;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+          }
+          .container h1 {
+            text-align: center;
+          }
+      </style>
+  </head>
+  <div class="container">
+      <h1 class="title is-1">Chat Application</h1>
+  </div>
+  <div class="container">
+      <div class="notification">
+        <form (submit)="login($event)">
+          <div class="field has-addons has-addons-centered">
+              <div class="control">
+                  <label class="label is-large">Username: </label>
+                  <input class="input" type="text" placeholder="Username/Email" [(ngModel)]='username' id='username' name='username'>
+              </div>
+              <br>
+                  <label class="label is-large">Password: </label>
+                  <input class="input" type="password" placeholder="Password" [(ngModel)]='password' id='password' name='password'>
+              <div class="control">
+              <br>
+                <button (click)="buttonClicked()" class="button is-primary">Join</button>
+              </div>
+          </div>
+        </form>
       </div>
     </div>
-  </section>
-  <div class="container">
-    <div class="notification">
-      <form (submit)="login($event)">
-        <div class="field has-addons has-addons-centered">
-            <div class="control">
-                <label class="label is-large">Username: </label>
-                <input class="input" type="text" placeholder="Username/Email" [(ngModel)]='username' id='username' name='username'>
-            </div>
-                <label class="label is-large">Password: </label>
-                <input class="input" type="password" placeholder="Password" [(ngModel)]='password' id='password' name='password'>
-            <div class="control">
-              <button class="button is-primary">Join chat room</button>
-            </div>
-        </div>
-      </form>
-    </div>
-  </div>
+</html>
   

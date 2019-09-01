@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 const cors = require('cors');
+const fs = require('fs');
 var http = require('http').Server(app);
 var bodyParser = require('body-parser');
 const path = require('path');
@@ -14,3 +15,12 @@ let server = http.listen(3000, function(){
     let port = server.address().port;
     console.log("Server listening on: " + host + " port: " + port);
 });
+
+/*let users;
+	fs.readFile('users.json', (error, data) =>{
+	    if(error) throw error;
+	    users = JSON.parse(data);
+	    console.log(users)
+	})
+*/
+require('./assess/routes/api-auth.js')(app, path);

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,14 +9,14 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   username: string = "";
-  
-  constructor(private router: Router) { }
+
+  constructor(private router: Router, private authservice: AuthService) { }
 
   ngOnInit() {
     localStorage.clear();
   }
 
-  login(){
+  buttonClicked(){
     if(this.username === ""){
       alert("Username field is empty. Please fill in field");
     } else {

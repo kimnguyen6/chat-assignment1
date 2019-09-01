@@ -3,7 +3,8 @@
         {
             "username": "Super",
             "email": "super@com.au",
-            "role": "Super",
+            "isSuper": true,
+            "isGrpAd": true,
             "groups": [],
             "password": "",
             "valid": false,

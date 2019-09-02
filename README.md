@@ -67,6 +67,10 @@ The data structures that would be used in a `users.json` file which is an array.
 - List of Groups
 - List of Channels
 
+
+### Users
+The structure of the users is seen below:
+
 ```javascript
 { users:
    [ { username: 'Super',

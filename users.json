@@ -1,16 +1,1 @@
-{
-    "users":[
-        {
-            "username": "Super",
-            "email": "super@com.au",
-            "isSuper": true,
-            "isGrpAd": true,
-            "groups": [],
-            "password": "",
-            "valid": false,
-            "adminlist": []
-        }
-
-    ]
-
-}
+{"users":[{"username":"Super","email":"super@com.au","isSuper":true,"isGrpAd":true,"groups":[],"password":"","valid":false,"adminlist":[]}]}

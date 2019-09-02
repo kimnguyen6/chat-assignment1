@@ -23,6 +23,7 @@ export class DashboardComponent implements OnInit {
     console.log("Logged in as " + this.username);
   }
 
+  // logout function takes user back to login page
   logOut() {
     this.router.navigateByUrl('/login');
   }

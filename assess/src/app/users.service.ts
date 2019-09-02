@@ -14,17 +14,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
         };
       }
     
+    //gets user name
     getUser(username:string) {
         return this.http.get('api/user', {
           params: { username: username }
         });
-    }
-
-    updateEmail(username:string, email:string) {
-        let body = {
-          'username': username,
-          'email': email
-        };
-        return this.http.post(`api/email`, JSON.stringify(body), this.genHeadersJSON());
     }
 }

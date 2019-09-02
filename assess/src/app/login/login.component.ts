@@ -9,6 +9,7 @@ import { AuthService } from 'auth.service';
 })
 export class LoginComponent implements OnInit {
   username: string = "";
+  password: string = "";
 
   constructor(private router: Router, private authservice: AuthService) { }
 
@@ -16,6 +17,7 @@ export class LoginComponent implements OnInit {
     localStorage.clear();
   }
 
+  //login function accessing the dashboard
   buttonClicked(){
     if(this.username === ""){
       alert("Username field is empty. Please fill in field");
